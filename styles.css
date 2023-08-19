@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Roboto:wght@500&family=Rowdies:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+.body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+     height: 100vh;
+     width: 100%;
+     background: black;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+}
+.game-board{
+    height: 100vmin;
+    width: 100vmin;
+    background: linear-gradient(#FED049,#68B984  );
+    display: grid;
+    grid-template-columns: repeat(16,1fr);  /*x+ above towards right and x- above towards down*/ 
+    grid-template-rows: repeat( 16,1fr);
+   
+
+}
+.score{
+    background: #3D5656 ;
+    padding: 10px 20px ;
+    border-radius: 20px;
+    font-family: 'Rowdies', cursive;
+}
+.snake {
+    background: green ;
+    border : 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: wheat;
+
+}
+.head {
+    background: url(snake.png);
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    z-index: 22;
+}
+.food {
+    background: url(apple.png);
+    background-size: 100% 100%;
+    z-index: 55;
+}
